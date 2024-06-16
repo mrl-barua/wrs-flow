@@ -1,4 +1,5 @@
 <template>
-  <div></div>
+  <p>Not Found</p>
 </template>
+
 <script setup lang="ts"></script>
