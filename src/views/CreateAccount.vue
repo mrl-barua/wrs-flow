@@ -72,8 +72,12 @@
           </div>
 
           <div class="container-login100-form-btn">
+            <button class="login100-form-btn">Create Account</button>
+          </div>
+          <div class="text-center p-t-136">
             <router-link class="txt2" to="/">
-              <button class="login100-form-btn">Back to Login</button>
+              Back to Login Page
+              <i class="fa fa-long-arrow-right m-l-5"></i>
             </router-link>
           </div>
         </form>
@@ -88,8 +92,6 @@ import "popper.js/dist/popper.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "select2/dist/js/select2.min.js";
 import "tilt.js/dest/tilt.jquery.min.js";
-
-import { onMounted } from "vue";
 </script>
 
 <style scoped>
@@ -121,4 +123,8 @@ import { onMounted } from "vue";
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
+
+.p-t-136[data-v-251467b4] {
+  padding-top: 50px;
+}
 </style>
