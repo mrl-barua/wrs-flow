@@ -43,7 +43,7 @@ export default {
         </div>
         <div class="user-details">
           <p class="title">web developer</p>
-          <p class="name">Kalvin Calimag</p>
+          <p class="name">Marlo Barua</p>
         </div>
       </div>
       <div class="nav">
@@ -56,49 +56,15 @@ export default {
                 ><span class="text">Dashboard</span></a
               >
             </li>
-            <li>
-              <a href="#"
-                ><i class="icon ph-bold ph-user"></i
-                ><span class="text">Viewers</span
-                ><i class="arrow ph-bold ph-caret-down"></i
-              ></a>
-              <ul class="sub-menu">
-                <li>
-                  <a href="#"><span class="text">Users</span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="text">Subscribers</span></a>
-                </li>
-              </ul>
-            </li>
+
             <li>
               <a href="#"
                 ><i class="icon ph-bold ph-calendar-blank"></i
                 ><span class="text">Agenda</span></a
               >
             </li>
+
             <li>
-              <a href="#"
-                ><i class="icon ph-bold ph-chart-bar"></i
-                ><span class="text">Revenue</span
-                ><i class="arrow ph-bold ph-caret-down"></i
-              ></a>
-              <ul class="sub-menu">
-                <li>
-                  <a href="#"><span class="text">Earnings</span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="text">Funds</span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="text">Declines</span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="text">Payouts</span></a>
-                </li>
-              </ul>
-            </li>
-            <li class="active">
               <a href="#"
                 ><i class="icon ph-bold ph-file-text"></i
                 ><span class="text">Articles</span></a
@@ -128,9 +94,11 @@ export default {
             >
           </li>
           <li>
-            <a href="#"
-              ><i class="icon ph-bold ph-sign-out"></i
-              ><span class="text">Logout</span></a
+            <router-link to="/">
+              <a href="#"
+                ><i class="icon ph-bold ph-sign-out"></i
+                ><span class="text">Logout</span></a
+              ></router-link
             >
           </li>
         </ul>
