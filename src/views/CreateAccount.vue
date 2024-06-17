@@ -7,11 +7,41 @@
         </div>
 
         <form class="login100-form validate-form">
-          <span class="login100-form-title"> Member Login </span>
+          <span class="login100-form-title">Create Account</span>
 
           <div
             class="wrap-input100 validate-input"
             data-validate="Valid email is required: ex@abc.xyz"
+          >
+            <input
+              class="input100"
+              type="text"
+              name="email"
+              placeholder="First Name"
+            />
+            <span class="focus-input100"></span>
+            <span class="symbol-input100">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div
+            class="wrap-input100 validate-input"
+            data-validate="First Name is required: John"
+          >
+            <input
+              class="input100"
+              type="text"
+              name="email"
+              placeholder="Last Name"
+            />
+            <span class="focus-input100"></span>
+            <span class="symbol-input100">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div
+            class="wrap-input100 validate-input"
+            data-validate="LastName is required: Cena"
           >
             <input
               class="input100"
@@ -42,18 +72,8 @@
           </div>
 
           <div class="container-login100-form-btn">
-            <button class="login100-form-btn">Login</button>
-          </div>
-
-          <div class="text-center p-t-12">
-            <span class="txt1"> Forgot </span>
-            <a class="txt2" href="#"> Username / Password? </a>
-          </div>
-
-          <div class="text-center p-t-136">
-            <router-link class="txt2" to="/create-account">
-              Create your Account
-              <i class="fa fa-long-arrow-right m-l-5"></i>
+            <router-link class="txt2" to="/">
+              <button class="login100-form-btn">Back to Login</button>
             </router-link>
           </div>
         </form>

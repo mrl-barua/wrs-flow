@@ -51,10 +51,10 @@
           </div>
 
           <div class="text-center p-t-136">
-            <router-link class="txt2" to="/create-account">
+            <a class="txt2" href="#">
               Create your Account
-              <i class="fa fa-long-arrow-right m-l-5"></i>
-            </router-link>
+              <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+            </a>
           </div>
         </form>
       </div>

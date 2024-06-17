@@ -6,7 +6,7 @@
 
 <style scoped>
 * {
-  padding: 0;
-  margin: 0;
+  padding: -110px;
+  margin: -8px;
 }
 </style>
