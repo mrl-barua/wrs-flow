@@ -1,7 +1,12 @@
 <script setup lang="ts"></script>
 
 <template>
-  <router-view />
+  <section class="container-fluid"><router-view /></section>
 </template>
 
-<style scoped></style>
+<style scoped>
+* {
+  padding: 0;
+  margin: 0;
+}
+</style>
