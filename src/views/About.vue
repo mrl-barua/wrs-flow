@@ -1,8 +1,12 @@
+<script setup lang="ts">
+import Sidebar from "../components/sidebar.vue";
+</script>
 <template>
-  <p>About</p>
+  <Sidebar />
+  <section class="container-fluid">
+    <p class="text-center">about</p>
+  </section>
 </template>
-
-<script setup lang="ts"></script>
 
 <style scoped>
 .login {

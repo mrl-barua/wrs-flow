@@ -51,16 +51,16 @@ export default {
           <p class="title">Main</p>
           <ul>
             <li>
-              <a href="#"
+              <router-link to="/home" class="routerlink"
                 ><i class="icon ph-bold ph-house-simple"></i
-                ><span class="text">Dashboard</span></a
+                ><span class="text">Dashboard</span></router-link
               >
             </li>
 
             <li>
-              <a href="#"
-                ><i class="icon ph-bold ph-calendar-blank"></i
-                ><span class="text">Agenda</span></a
+              <router-link to="/about" class="routerlink">
+                <i class="icon ph-bold ph-calendar-blank"></i
+                ><span class="text">About</span></router-link
               >
             </li>
 
@@ -93,13 +93,12 @@ export default {
               ><span class="text">FAQ</span></a
             >
           </li>
+
           <li>
-            <router-link to="/">
-              <a href="#"
-                ><i class="icon ph-bold ph-sign-out"></i
-                ><span class="text">Logout</span></a
-              ></router-link
-            >
+            <router-link to="/" class="routerlink">
+              <i class="icon ph-bold ph-sign-out"></i
+              ><span class="text">Logout</span>
+            </router-link>
           </li>
         </ul>
       </div>
@@ -111,6 +110,10 @@ export default {
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 .active {
   /* your active styles here */
+}
+
+.routerlink {
+  text-decoration: none;
 }
 * {
   margin: 0;
