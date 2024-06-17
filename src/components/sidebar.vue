@@ -1,10 +1,13 @@
 <script>
 import { ref } from "vue";
+import Swal from "sweetalert2";
+import { useRouter } from "vue-router";
 
 export default {
   setup() {
     const isSidebarActive = ref(false);
     const activeMenu = ref(null);
+    const router = useRouter();
 
     const toggleSidebar = () => {
       isSidebarActive.value = !isSidebarActive.value;
@@ -18,11 +21,25 @@ export default {
       }
     };
 
+    const confirmLogout = async () => {
+      const result = await Swal.fire({
+        title: "Are you sure you want to logout?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Yes, logout",
+        cancelButtonText: "No, cancel",
+      });
+      if (result.isConfirmed) {
+        router.push("/");
+      }
+    };
+
     return {
       isSidebarActive,
       activeMenu,
       toggleSidebar,
       toggleMenu,
+      confirmLogout,
     };
   },
 };
@@ -95,10 +112,10 @@ export default {
           </li>
 
           <li>
-            <router-link to="/" class="routerlink">
-              <i class="icon ph-bold ph-sign-out"></i
-              ><span class="text">Logout</span>
-            </router-link>
+            <a href="#" class="routerlink" @click.prevent="confirmLogout">
+              <i class="icon ph-bold ph-sign-out"></i>
+              <span class="text">Logout</span>
+            </a>
           </li>
         </ul>
       </div>

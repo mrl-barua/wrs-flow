@@ -1,3 +1,43 @@
+<script>
+import "jquery/dist/jquery.min.js";
+import "popper.js/dist/popper.min.js";
+import "bootstrap/dist/js/bootstrap.min.js";
+import "select2/dist/js/select2.min.js";
+import "tilt.js/dest/tilt.jquery.min.js";
+import Swal from "sweetalert2";
+
+import { onMounted } from "vue";
+
+import { ref } from "vue";
+import { useRouter } from "vue-router";
+
+export default {
+  setup() {
+    const email = ref("");
+    const password = ref("");
+    const router = useRouter();
+
+    const login = () => {
+      if (email.value === "Admin@gmail.com" && password.value === "admin") {
+        router.push("/home");
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Incorrect email or password!",
+        });
+      }
+    };
+
+    return {
+      email,
+      password,
+      login,
+    };
+  },
+};
+</script>
+
 <template>
   <div class="limiter">
     <div class="container-login100">
@@ -6,7 +46,7 @@
           <img src="../assets/img-01.png" alt="IMG" />
         </div>
 
-        <form class="login100-form validate-form">
+        <form class="login100-form validate-form" @submit.prevent="login">
           <span class="login100-form-title"> Member Login </span>
 
           <div
@@ -18,6 +58,7 @@
               type="text"
               name="email"
               placeholder="Email"
+              v-model="email"
             />
             <span class="focus-input100"></span>
             <span class="symbol-input100">
@@ -34,6 +75,7 @@
               type="password"
               name="pass"
               placeholder="Password"
+              v-model="password"
             />
             <span class="focus-input100"></span>
             <span class="symbol-input100">
@@ -61,16 +103,6 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-import "jquery/dist/jquery.min.js";
-import "popper.js/dist/popper.min.js";
-import "bootstrap/dist/js/bootstrap.min.js";
-import "select2/dist/js/select2.min.js";
-import "tilt.js/dest/tilt.jquery.min.js";
-
-import { onMounted } from "vue";
-</script>
 
 <style scoped>
 @import url("../css/login/main.css");

@@ -3,9 +3,7 @@ import Sidebar from "../components/sidebar.vue";
 </script>
 <template>
   <Sidebar />
-  <section class="container-fluid">
-    <p class="text-center">about</p>
-  </section>
+  <section class="container-fluid"></section>
 </template>
 
 <style scoped>
