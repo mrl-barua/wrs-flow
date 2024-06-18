@@ -4,9 +4,4 @@
   <section class="container-fluid"><router-view /></section>
 </template>
 
-<style scoped>
-* {
-  padding: -110px;
-  margin: -8px;
-}
-</style>
+<style scoped></style>

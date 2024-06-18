@@ -146,7 +146,9 @@ export default {
   min-height: 100vh;
 }
 .sidebar {
-  position: relative;
+  position: fixed; /* or 'absolute' */
+  top: 0;
+  left: 0;
   width: 256px;
   height: 100vh;
   display: flex;
@@ -162,10 +164,6 @@ export default {
   padding: 24px;
   border-radius: 0px 30px 30px 0px;
   transition: all 0.3s;
-}
-.sidebar {
-  display: flex;
-  gap: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #f6f6f6;
 }
