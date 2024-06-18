@@ -1,5 +1,10 @@
-<script setup lang="ts">
+<script>
 import Sidebar from "../components/sidebar.vue";
+
+export default {
+  name: "About",
+  // other options here
+};
 </script>
 <template>
   <Sidebar />

@@ -12,6 +12,7 @@ import { ref } from "vue";
 import { useRouter } from "vue-router";
 
 export default {
+  name: "Login",
   setup() {
     const email = ref("");
     const password = ref("");
